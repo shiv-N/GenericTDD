@@ -43,4 +43,25 @@ public class TestCases {
         Double result = maxDouble.FindMaxNumber(3.1,3.5,4.2);
         Assert.assertEquals((Double) 4.2,result);
     }
+
+    @Test
+    public void First_Position_String_TestCases() {
+        MaxString maxString = new MaxString();
+        String result = maxString.FindMaxString("","String method tutorial","String method tutorialzzz");
+        Assert.assertEquals("String method tutorialzzz",result);
+    }
+
+    @Test
+    public void Second_Position_String_TestCases() {
+        MaxString maxString = new MaxString();
+        String result = maxString.FindMaxString("String method tutorial","String method tutorialzzz","");
+        Assert.assertEquals("String method tutorialzzz",result);
+    }
+
+    @Test
+    public void Third_Position_String_TestCases() {
+        MaxString maxString = new MaxString();
+        String result = maxString.FindMaxString("String method tutorial","","String method tutorialzzz");
+        Assert.assertEquals("String method tutorialzzz",result);
+    }
 }
