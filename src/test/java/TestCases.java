@@ -22,4 +22,25 @@ public class TestCases {
         int result = maxInteger.FindMaxNumber(40,20,75);
         Assert.assertEquals(75,result);
     }
+
+    @Test
+    public void First_Position_Double_TestCases() {
+        MaxDouble maxDouble = new MaxDouble();
+        Double result = maxDouble.FindMaxNumber(4.2,2.5,3.1);
+        Assert.assertEquals((Double) 4.2,result);
+    }
+
+    @Test
+    public void Second_Position_Double_TestCases() {
+        MaxDouble maxDouble = new MaxDouble();
+        Double result = maxDouble.FindMaxNumber(2.5,4.2,3.1);
+        Assert.assertEquals((Double) 4.2,result);
+    }
+
+    @Test
+    public void Third_Position_Double_TestCases() {
+        MaxDouble maxDouble = new MaxDouble();
+        Double result = maxDouble.FindMaxNumber(3.1,3.5,4.2);
+        Assert.assertEquals((Double) 4.2,result);
+    }
 }
